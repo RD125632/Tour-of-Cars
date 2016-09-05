@@ -1,0 +1,11 @@
+<div class="car-detail-content" *ngIf="car">
+  <div class="brand-head">
+      <img class="brand-image" src="{{car.url}}" alt="" align="right">
+      <h2 class="brand-title" >{{car.name}}</h2>
+      <p class="brand-rating">Rating: {{car.rating}}</p>
+  </div>
+  <br/>
+  <div class="brand-content">
+    <p class="brand-rating">{{car.description}}</p>
+  </div>
+</div>

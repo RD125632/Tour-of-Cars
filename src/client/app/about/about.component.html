@@ -1,0 +1,11 @@
+  <div class="car-menu">
+    <h2>BRANDS</h2>
+    <ul class="brandList">
+       <li *ngFor="let car of cars">
+        <a (click)="updateDetailComponent(car.name)">{{car.name}}</a>
+      </li>
+    </ul>
+</div>
+<div class="about-content">
+  <car-details [car]="currentCar"></car-details>
+</div>
