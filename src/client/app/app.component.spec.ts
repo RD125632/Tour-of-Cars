@@ -13,7 +13,6 @@ import {
 // import {provideFakeRouter} from '../testing/router/router-testing-providers';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PromiseComponent } from './promise/promise.component';
 
@@ -23,14 +22,14 @@ export function main() {
     // Disable old forms
 
     let config: Route[] = [
-      { path: '', component: HomeComponent },
+      { path: '', component: AboutComponent },
       { path: 'about', component: AboutComponent },
       { path: 'promise', component: PromiseComponent }
     ];
     beforeEach(() => {
       TestBed.configureTestingModule({
         imports: [RouterModule.forRoot(config), FormsModule],
-        declarations: [TestComponent, AppComponent, HomeComponent, AboutComponent, PromiseComponent],
+        declarations: [TestComponent, AppComponent, AboutComponent, PromiseComponent],
         providers:[
         ]
       });

@@ -1,8 +1,8 @@
 :host {
-  background-color: #777;
+  background-color: #111;
   color: rgba(255, 255, 255, 0.87);
   display: block;
-  height: 48px;
+  height: 0px;
   padding: 0 16px;
   text-align: center;
 }

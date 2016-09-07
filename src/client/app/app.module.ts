@@ -9,12 +9,11 @@ import { routes } from './app.routes';
 
 import { PromiseModule } from './promise/promise.module';
 import { AboutModule } from './about/about.module';
-import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes),PromiseModule, AboutModule, HomeModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes),PromiseModule, AboutModule, SharedModule.forRoot()],
   declarations: [
     AppComponent
   ],

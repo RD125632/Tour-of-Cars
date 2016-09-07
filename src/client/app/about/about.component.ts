@@ -15,8 +15,6 @@ import { CarService } from './car-detail/car.service';
 
 export class AboutComponent implements OnInit {
 
-  newName: string = '';
-  errorMessage: string;
   cars: Car[] = [];
   currentCar: Car;
 
@@ -24,6 +22,7 @@ export class AboutComponent implements OnInit {
 
     ngOnInit(): void {
       this.getCars();
+      this.updateDetailComponent("Toyota");
     }
 
     getCars(): void

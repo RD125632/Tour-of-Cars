@@ -5,15 +5,11 @@ describe('App', () => {
   });
 
   it('should have a title', () => {
-    expect(browser.getTitle()).toEqual('Welcome to angular2-seed!');
+    expect(browser.getTitle()).toEqual('Tour of Cars');
   });
 
   it('should have <nav>', () => {
     expect(element(by.css('sd-app sd-navbar nav')).isPresent()).toEqual(true);
-  });
-
-  it('should have correct nav text for Home', () => {
-    expect(element(by.css('sd-app sd-navbar nav a:first-child')).getText()).toEqual('HOME');
   });
 
 

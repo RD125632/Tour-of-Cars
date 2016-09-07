@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NameListService } from '../shared/index';
 import { CarouselComponent } from './carousel/carousel.component';
 
 /**
