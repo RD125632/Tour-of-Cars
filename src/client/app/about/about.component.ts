@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CarDetailComponent } from './car-detail/car-detail.component';
-import { Car }        from './car-detail/car';
-import { CarService } from './car-detail/car.service';
+import { CarBrand }        from '../shared/car/car-brand';
+import { CarBrandService } from './car-detail/car-brand.service';
 /**
  * This class represents the lazy loaded HomeComponent.
  */
@@ -15,10 +15,10 @@ import { CarService } from './car-detail/car.service';
 
 export class AboutComponent implements OnInit {
 
-  cars: Car[] = [];
-  currentCar: Car;
+  carBrands: CarBrand[] = [];
+  currentCarBrand: CarBrand;
 
-  constructor(private carService: CarService) {}
+  constructor(private carService: CarBrandService) {}
 
     ngOnInit(): void {
       this.getCars();
@@ -27,7 +27,7 @@ export class AboutComponent implements OnInit {
 
     getCars(): void
     {
-      this.carService.getCarBrands().then(cars => this.cars = cars);
+      this.carService.getCarBrands().then(cars => this.carBrands = cars);
     }
 
     goBack(): void {
@@ -36,7 +36,7 @@ export class AboutComponent implements OnInit {
 
     updateDetailComponent(brandName : string) : void {
       this.carService.getBrand(brandName)
-                      .then(car => this.currentCar = car);
+                      .then(car => this.currentCarBrand = car);
     }
 
 }

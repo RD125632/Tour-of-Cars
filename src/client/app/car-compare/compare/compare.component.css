@@ -1,0 +1,45 @@
+.testset
+{
+  width: 700px;
+  height: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#compareTitle
+{
+  position:absolute;
+  color:orange;
+  left:210px;
+  top:10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+}
+
+#versus
+{
+  position:absolute;
+  color:orange;
+  left:333px;
+  top:250px;
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  font-size: 28px;
+}
+
+#car1
+{
+  position: absolute;
+  left: 0;
+  top:105px;
+  right: auto;
+}
+
+#car2
+{
+  position: absolute;
+  left: auto;
+  top:105px;
+  right: 0;
+}

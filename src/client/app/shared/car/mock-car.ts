@@ -1,6 +1,6 @@
-import { Car } from './car';
+import { CarBrand } from './car-brand';
 
-export var CARS: Car[] = [
+export var CARBRANDS: CarBrand[] = [
       {
         name: 'Toyota',
         country: 'Japan',

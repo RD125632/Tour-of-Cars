@@ -1,22 +1,22 @@
 import { Injectable }    from '@angular/core';
 import { Headers } from '@angular/http';
-import { CARS } from './mock-car';
+import { CARBRANDS } from '../../shared/car/mock-car';
 import 'rxjs/add/operator/toPromise';
 
-import { Car } from './car.ts';
+import { CarBrand } from '../../shared/car/car-brand.ts';
 
 @Injectable()
-export class CarService {
+export class CarBrandService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor() { }
 
-  getCarBrands(): Promise<Car[]> {
-    return Promise.resolve(CARS);
+  getCarBrands(): Promise<CarBrand[]> {
+    return Promise.resolve(CARBRANDS);
   }
 
-  getBrand(name: string): Promise<Car> {
+  getBrand(name: string): Promise<CarBrand> {
   return this.getCarBrands()
              .then(cars => cars.find(car => car.name === name));
 }

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
-import { Car }        from './car';
-import { CarService } from './car.service';
+import { CarBrand }        from '../../shared/car/car-brand';
+import { CarBrandService } from './car-brand.service';
 
 @Component({
   selector: 'car-details',
@@ -10,5 +10,5 @@ import { CarService } from './car.service';
 })
 
 export class CarDetailComponent {
-  @Input() car: Car[];
+  @Input() car: CarBrand[];
 }

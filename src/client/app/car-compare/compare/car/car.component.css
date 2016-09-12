@@ -1,0 +1,38 @@
+.car-compare-component
+{
+  background-color:#D6D6D6;
+  display: inline-block;
+  width: 275px;
+  height:350px;
+  overflow: hidden;
+}
+
+.car-compare-component:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+
+.car-image-center {
+  margin:0;
+  padding:0;
+  margin-top:5px;
+}
+
+.compare-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.car-title {
+  width: 100%;
+  height: 33%;
+  margin-top:-20px;
+  background-color: #D6D6D6;
+  text-align: center;
+}
+
+.car-title p {
+    vertical-align: middle;
+    line-height: 120px;
+}

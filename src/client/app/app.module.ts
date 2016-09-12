@@ -6,23 +6,19 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 
-
 import { PromiseModule } from './promise/promise.module';
 import { AboutModule } from './about/about.module';
+import { CarCompareModule } from './car-compare/car-compare.module';
 import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes),PromiseModule, AboutModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes),PromiseModule, AboutModule, CarCompareModule, SharedModule.forRoot()],
   declarations: [
     AppComponent
   ],
-  providers: [{
-    provide: APP_BASE_HREF,
-    useValue: '<%= APP_BASE %>'
-  }],
+  providers: [{ provide: APP_BASE_HREF,useValue: '<%= APP_BASE %>' }],
   bootstrap: [AppComponent]
-
 })
 
 export class AppModule { }
